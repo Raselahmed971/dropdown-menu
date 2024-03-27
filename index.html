@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a class="logo" href="#">Logo</a>
+        <div class="menuToggle"></div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">More +</a>
+                    <ul>
+                        <li><a href="#">Droupdown1</a></li>
+                        <li><a href="#">Droupdown2</a></li>
+                        <li><a href="#">Droupdown3 +</a>
+                            <ul>
+                                <li><a href="#">Droupdown1</a></li>
+                                <li><a href="#">Droupdown2</a></li>
+                                <li><a href="#">Droupdown3</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <script>
+        var menuToggle = document.querySelector(".menuToggle");
+        var header = document.querySelector("header");
+        menuToggle.onclick = function(){
+            header.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
